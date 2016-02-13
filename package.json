@@ -1,0 +1,25 @@
+{
+  "name": "your-app",
+  "description": "Description",
+  "author": "Your Name",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "start": "brunch watch --server"
+  },
+  "dependencies": {
+    "chip-js": "~2.0.0"
+  },
+  "devDependencies": {
+    "auto-reload-brunch": "~2.0.0",
+    "brunch": "~2.2.3",
+    "clean-css-brunch": "~2.0.0",
+    "css-brunch": "~2.0.0",
+    "html-brunch": "^1.6.1",
+    "javascript-brunch": "~2.0.0",
+    "uglify-js-brunch": "~2.0.0"
+  }
+}
