@@ -13,9 +13,13 @@ Clone this repo manually or use `brunch new myAppDir -s https://github.com/chip-
     * [Brunch](http://brunch.io): `npm install -g brunch`
     * Brunch plugins and app dependencies: `npm install`
 * Run:
-    * `brunch watch --server` — watches the project with continuous rebuild. This will also launch HTTP server with [pushState](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history).
-    * `brunch build --production` — builds minified project for production
+    * `npm start` — watches the project with continuous rebuild. This will also launch HTTP server with
+    [pushState](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history).
+    * `npm run build` — builds a minified project for production
+* Test:
+    * `npm test` - runs [mocha](https://mochajs.org/) tests, files starting with "test" contained within your test
+    folder. These are run in a headless phantomjs browser.
 * Learn:
-    * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in `app/` dir.
+    * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in the `app/` dir.
     * Place static files into `app/assets/` and they will be copied to `public/`.
     * [Brunch site](http://brunch.io), [Getting started guide](https://github.com/brunch/brunch-guide#readme)

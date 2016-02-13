@@ -8,7 +8,9 @@
     "url": ""
   },
   "scripts": {
-    "start": "brunch watch --server"
+    "start": "brunch watch --server --port 8080",
+    "build": "brunch build --production",
+    "test": "brunch build && karma start --singleRun=true"
   },
   "dependencies": {
     "chip-js": "~2.0.0"
@@ -16,10 +18,18 @@
   "devDependencies": {
     "auto-reload-brunch": "~2.0.0",
     "brunch": "~2.2.3",
+    "chai": "^3.4.1",
     "clean-css-brunch": "~2.0.0",
     "css-brunch": "~2.0.0",
     "html-brunch": "^1.6.1",
     "javascript-brunch": "~2.0.0",
+    "karma": "^0.13.15",
+    "karma-chai": "^0.1.0",
+    "karma-mocha": "^0.2.1",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-source-map-support": "^1.1.0",
+    "mocha": "^2.3.4",
+    "phantomjs": "^2.1.2",
     "uglify-js-brunch": "~2.0.0"
   }
 }

@@ -1,4 +1,3 @@
-var componentFolder = 'components';
 var app = chip();
 window.app = app;
 

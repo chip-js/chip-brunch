@@ -3,22 +3,25 @@ exports.config = {
   files: {
     javascripts: {
       joinTo: {
-        'app.js': /^app/,
-        'vendor.js': /^vendor/
+        'js/app.js': /^app/,
+        'js/vendor.js': /^vendor/,
+        'js/test.js': /^test/
       }
     },
     stylesheets: {
-      joinTo: 'app.css'
+      joinTo: 'css/app.css'
     },
 
     templates: {
       joinTo: {
-        'app.js': /^app/
+        'js/app.js': /^app/
       }
     }
   },
 
-  server: {
-    port: 8080
+  modules: {
+    autoRequire: {
+      'js/test.js': [ 'test/run-all' ]
+    }
   }
 };
