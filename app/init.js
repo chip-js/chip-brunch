@@ -1,3 +1,4 @@
+var chip = require('chip-js');
 var app = chip();
 window.app = app;
 

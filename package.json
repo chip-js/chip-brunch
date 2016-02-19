@@ -15,9 +15,12 @@
   "dependencies": {
     "chip-js": "~2.0.0"
   },
+  "engines": {
+    "node": ">= 5.0"
+  },
   "devDependencies": {
     "auto-reload-brunch": "~2.0.0",
-    "brunch": "~2.2.3",
+    "brunch": "~2.3.2",
     "chai": "^3.4.1",
     "clean-css-brunch": "~2.0.0",
     "css-brunch": "~2.0.0",

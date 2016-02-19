@@ -1,10 +1,12 @@
 exports.config = {
+  npm: {
+    enabled: true
+  },
 
   files: {
     javascripts: {
       joinTo: {
-        'js/app.js': /^app/,
-        'js/vendor.js': /^vendor/,
+        'js/app.js': /^app|^node_modules/,
         'js/test.js': /^test/
       }
     },
